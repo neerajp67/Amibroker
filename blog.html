@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+<title>Blog | Amibroker</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!--Import Google Icon Font-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="css/blog.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/animation.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style>
+    #blogImg {
+        width: 100%;
+
+    }
+
+    * p {
+        text-align: inherit;
+    }
+</style>
+
+<body>
+    <!-- nav -->
+    <!-- navbar -->
+    <nav class="blue ligten-1">
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">Amibroker</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Algo Devlopment.html">Algo Development </a></li>
+                <li><a href="Python.html">Python Algo </a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Algo Devlopment.html">Algo Development </a></li>
+        <li><a href="Python.html">Python Algo </a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="About.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <!--Floting button hover  -->
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large red">
+            <i class="large material-icons">mode_edit</i>
+        </a>
+        <ul>
+            <li><a class="btn-floating green"><i class="material-icons">call</i></a></li>
+            <li><a class="btn-floating red"><i class="material-icons">location_on</i></a></li>
+            <li><a class="btn-floating yellow darken-1"><i class="material-icons">code</i></a></li>
+            <li><a class="btn-floating green"><i class="material-icons">insert_chart</i></a></li>
+            <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+        </ul>
+    </div>
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-content" style="max-width:1600px">
+
+        <!-- Grid -->
+        <div class="w3-row w3-padding w3-border">
+
+            <!-- Blog entries -->
+            <div class="w3-col l8 s12">
+
+                <!-- Blog entry -->
+                <div class="w3-container w3-white w3-margin w3-padding-large">
+                    <div class="w3-center">
+                        <h3>TITLE HEADING</h3>
+                        <h5>Title description, <span class="w3-opacity">DD/MM/YYYY</span></h5>
+                    </div>
+
+                    <div class="w3-justify">
+                        <img src="img/t5.png" alt="" class="w3-padding-16" id="blogImg">
+                        <p>Blog text goes here, Write something.. Blog text goes here, Write something.. Blog text goes
+                            here, Write something.. Blog text goes here, Write something.. Blog text goes here, Write
+                            something.. Blog text goes here, Write something.. Blog text goes here, Write something..
+                            Blog text goes here, Write something..Blog text goes here, Write something.. Blog text goes
+                            here, Write something.. Blog text goes
+                            here, Write something.. Blog text goes here, Write something.. Blog text goes here, Write
+                            something.. Blog text goes here, Write something.. Blog text goes here, Write something..
+                            Blog text goes here, Write something.. Blog text goes here, Write something.. Blog text goes
+                            here, Write something.. Blog text goes
+                            here, Write something.. Blog text goes here, Write something.. Blog text goes here, Write
+                            something.. Blog text goes here, Write something.. Blog text goes here, Write something..
+                            Blog text goes here, Write something.. </p>
+                        <p class="w3-left"><button class="w3-button w3-white w3-border w3-hover-blue"
+                                onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+                        <p class="w3-right"><button class="w3-button w3-white w3-border w3-hover-blue"
+                                onclick="myFunction('demo2')"><b>Replies
+                                     </b> <span class="w3-tag w3-white">1</span></button></p>
+                        <p class="w3-clear"></p>
+                        <div class="w3-row w3-margin-bottom" id="demo2" style="display:none">
+                            <hr>
+                            <div class="w3-col l2 m3">
+                                <img src="img/t5.png" style="width:90px;">
+                            </div>
+                            <div class="w3-col l10 m9">
+                                <h4>User2<span class="w3-opacity w3-medium">DD/MM/YY 00:00 PM/AM</span></h4>
+                                <p>comment section, write a comment</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+                <!-- Blog entry -->
+                <div class="w3-container w3-white w3-margin w3-padding-large">
+                    <div class="w3-center">
+                        <h3>TITLE HEADING</h3>
+                        <h5>Title description, <span class="w3-opacity">DD/MM/YY</span></h5>
+                    </div>
+
+                    <div class="w3-justify">
+                        <img src="img/t5.png" alt="" id="blogImg" class="w3-padding-16">
+                        <p>Blog text goes here, Write something.. Blog text goes here, Write something.. Blog text goes
+                            here, Write something.. Blog text goes here, Write something.. Blog text goes here, Write
+                            something.. Blog text goes here, Write something.. Blog text goes here, Write something..
+                            Blog text goes here, Write something..Blog text goes here, Write something.. Blog text goes
+                            here, Write something.. Blog text goes
+                            here, Write something.. Blog text goes here, Write something.. Blog text goes here, Write
+                            something.. Blog text goes here, Write something.. Blog text goes here, Write something..
+                            Blog text goes here, Write something.. Blog text goes here, Write something.. Blog text goes
+                            here, Write something.. Blog text goes
+                            here, Write something.. Blog text goes here, Write something.. Blog text goes here, Write
+                            something.. Blog text goes here, Write something.. Blog text goes here, Write something..
+                            Blog text goes here, Write something.. </p>
+                        <p class="w3-left"><button class="w3-button w3-white w3-border w3-hover-blue"
+                                onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+                        <p class="w3-right"><button class="w3-button w3-white w3-border w3-hover-blue"
+                                onclick="myFunction('demo2')"><b>Replies
+                                     </b> <span class="w3-tag w3-white">2</span></button></p>
+                        <p class="w3-clear"></p>
+
+                        <!--comment field -->
+                        <div id="demo2" style="display:none">
+                            <div class="w3-row">
+                                <hr>
+                                <div class="w3-col l2 m3">
+                                    <img src="img/t5.png" style="width:90px;">
+                                </div>
+                                <div class="w3-col l10 m9">
+                                    <h4>User2 <span class="w3-opacity w3-medium">DD/MM/YY 00:00 PM/AM</span></h4>
+                                    <p>comment section, write a comment</p><br>
+                                </div>
+                            </div>
+                            <div class="w3-row w3-margin-bottom">
+                                <div class="w3-col l2 m3">
+                                    <img src="img/t5.png" style="width:90px;">
+                                </div>
+                                <div class="w3-col l10 m9">
+                                    <h4>User3 <span class="w3-opacity w3-medium">DD/MM/YY 00:00 PM/AM</span></h4>
+                                    <p>comment section, write a comment</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog entry -->
+                <div class="w3-container w3-white w3-margin w3-padding-large">
+                    <div class="w3-center">
+                        <h3>TITLE HEADING</h3>
+                        <h5>Title description, <span class="w3-opacity">DD/MM/YY</span></h5>
+                    </div>
+
+                    <div class="w3-justify">
+                        <img src="img/t5.png" alt="" id="blogImg" class="w3-padding-16">
+                        <p><strong>Dont miss!</strong> The runway in New York City this weekend is gonna be legendary!
+                        </p>
+                        <p>Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl
+                            vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor
+                            magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies
+                            mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo
+                            condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                        <p class="w3-left"><button class="w3-button w3-white w3-border w3-hover-blue"
+                                onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+                        <p class="w3-right"><button class="w3-button w3-white w3-border w3-hover-blue"
+                                onclick="myFunction('demo3')"><b>Replies
+                                     </b> <span class="w3-tag w3-white">3</span></button></p>
+                        <p class="w3-clear"></p>
+
+
+                        <!-- Example of comment field -->
+                        <div id="demo3" style="display:none">
+                            <hr>
+                            <div class="w3-row w3-margin-bottom">
+                                <div class="w3-col l2 m3">
+                                    <img src="img/t5.png" style="width:90px;">
+                                </div>
+                                <div class="w3-col l10 m9">
+                                    <h4>User2 <span class="w3-opacity w3-medium">DD/MM/YY 00:00 PM/AM</span></h4>
+                                    <p>comment section, write a comment/p>
+                                </div>
+                            </div>
+                            <div class="w3-row w3-margin-bottom">
+                                <div class="w3-col l2 m3">
+                                    <img src="img/t5.png" style="width:90px;">
+                                </div>
+                                <div class="w3-col l10 m9">
+                                    <h4>User3 <span class="w3-opacity w3-medium">DD/MM/YY 00:00 PM/AM</span></h4>
+                                    <p>comment section, write a comment</p>
+                                </div>
+                            </div>
+                            <div class="w3-row w3-margin-bottom">
+                                <div class="w3-col l2 m3">
+                                    <img src="img/t5.png" style="width:90px;">
+                                </div>
+                                <div class="w3-col l10 m9">
+                                    <h4>User4 <span class="w3-opacity w3-medium">DD/MM/YY 00:00 PM/AM</span></h4>
+                                    <p>comment section, write a comment</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- END BLOG ENTRIES -->
+            </div>
+
+            <!-- About/Information menu -->
+            <div class="w3-col l4">
+                <!-- About Card -->
+                <div class="w3-white w3-margin">
+                    <img src="img/t5.png" alt="" style="width:100%" class="w3-grayscale">
+                    <div class="w3-container w3-blue">
+                        <h4>Amibroker</h4>
+                        <hr>
+                        <p style="color: black;">Write Some Text.. Write Some Text.. Write Some Text.. Write Some
+                            Text..Write Some Text..Write
+                            Some Text..Write Some Text..</p>
+                    </div>
+                </div>
+                <hr>
+
+                <!-- Posts -->
+                <div class="w3-white w3-margin">
+                    <div class="w3-container w3-padding w3-blue">
+                        <h4>Popular Posts</h4>
+                    </div>
+                    <ul class="w3-ul w3-hoverable w3-white">
+                        <a href="">
+                            <li class="w3-padding-16">
+                                <img src="img/t5.png" alt="" class="w3-left w3-margin-right" style="width:50px;">
+                                <span class="w3-large" style="color: black;">Heading</span>
+                                <br>
+                                <span style="color: black;">Discription</span>
+                            </li>
+                        </a>
+                        <a href="">
+                            <li class="w3-padding-16">
+                                <img src="img/t5.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+                                <span class="w3-large" style="color: black;">Heading</span>
+                                <br>
+                                <span style="color: black;">Discription</span>
+                            </li>
+                        </a>
+                        <a href="">
+                            <li class="w3-padding-16">
+                                <img src="img/t5.png" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+                                <span class="w3-large" style="color: black;">Heading</span>
+                                <br>
+                                <span style="color: black;">Discription</span>
+                            </li>
+                        </a>
+                        <a href="">
+                            <li class="w3-padding-16">
+                                <img src="img/t5.png" alt="Image" class="w3-left w3-margin-right w3-sepia"
+                                    style="width:50px">
+                                <span class="w3-large" style="color: black;">Heading</span>
+                                <br>
+                                <span style="color: black;">Discription</span>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <hr>
+
+                <!-- Tags -->
+                <div class="w3-white w3-margin">
+                    <div class="w3-container w3-padding w3-blue">
+                        <h4>Tags</h4>
+                    </div>
+                    <div class="w3-container w3-white">
+                        <p>
+                            <a href="#!"><span
+                                    class="w3-tag w3-light-grey w3-hover-blue w3-small w3-margin-bottom">Technology</span></a>
+                            <a href="#!"><span
+                                    class="w3-tag w3-light-grey w3-hover-blue w3-small w3-margin-bottom">Python</span>
+                            </a>
+                            <a href="#!"><span class="w3-tag w3-light-grey w3-hover-blue w3-small w3-margin-bottom">Meta
+                                    Trader</span></a>
+                            <a href="#!"><span
+                                    class="w3-tag w3-light-grey w3-hover-blue w3-small w3-margin-bottom">Amibroker</span>
+                            </a>
+                            <a href="#!"><span class="w3-tag w3-light-grey w3-hover-blue w3-small w3-margin-bottom">Algo
+                                    Development</span> </a>
+                            <a href="#!"><span
+                                    class="w3-tag w3-light-grey w3-hover-blue w3-small w3-margin-bottom">TradingView</span></a>
+                            <a href="#!"><span
+                                    class="w3-tag w3-light-grey w3-hover-blue w3-small w3-margin-bottom">Github</span>
+                            </a>
+                            <a href="#!"><span class="w3-tag w3-light-grey w3-hover-blue w3-small w3-margin-bottom">ALF
+                                    Services</span> </a>
+                            <a href="#!"> <span
+                                    class="w3-tag w3-light-grey w3-hover-blue w3-small w3-margin-bottom">Accessories</span></a>
+                            <a href="#!"><span class="w3-tag w3-light-grey w3-hover-blue w3-small w3-margin-bottom">Tech
+                                    News</span>
+                            </a>
+                            <a href="#!"> <span class="w3-tag w3-light-grey w3-hover-blue w3-small w3-margin-bottom">New
+                                    Technologies</span>
+                            </a>
+                            <a href="#!"><span
+                                    class="w3-tag w3-light-grey w3-hover-blue w3-small w3-margin-bottom">Trending</span>
+                            </a>
+                            <a href="#!"><span
+                                    class="w3-tag w3-light-grey w3-hover-blue w3-small w3-margin-bottom">Cloud
+                                    Services</span></a>
+                            <a href="#!"><span
+                                    class="w3-tag w3-light-grey w3-hover-blue w3-small w3-margin-bottom">Network</span>
+                            </a>
+                            <a href="#!"><span
+                                    class="w3-tag w3-light-grey w3-hover-blue w3-small w3-margin-bottom">Python
+                                    Algo</span></a>
+                        </p>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="w3-white w3-margin">
+                    <div class="w3-container w3-padding w3-blue">
+                        <h4>Follow us</h4>
+                    </div>
+                    <div class="w3-container w3-xlarge w3-padding">
+                        <a href="facebook.com"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+                        <a href="instagram.com"></a> <i class="fa fa-instagram w3-hover-opacity"></i></a>
+                        <a href="pinterest.com"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+                        <a href="twitter.com"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+                        <a href="linkedin.com"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+                    </div>
+                </div>
+                <hr>
+
+                <!-- Subscribe -->
+                <div class="w3-white w3-margin">
+                    <div class="w3-container w3-padding w3-blue">
+                        <h4>Subscribe</h4>
+                    </div>
+                    <div class="w3-container w3-white">
+                        <p>Enter your e-mail below and get notified on the latest blog posts.</p>
+                        <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%">
+                        </p>
+                        <p><button type="button" onclick="document.getElementById('subscribe').style.display='block'"
+                                class="buton">Subscribe</button></p>
+
+                    </div>
+                </div>
+
+                <!-- END About/Intro Menu -->
+            </div>
+
+            <!-- END GRID -->
+        </div>
+
+        <!-- END w3-content -->
+    </div>
+
+    <!-- Subscribe Modal -->
+    <div id="subscribe" class="w3-modal w3-animate-opacity">
+        <div class="w3-modal-content" style="padding:32px">
+            <div class="w3-container w3-white">
+                <i onclick="document.getElementById('subscribe').style.display='none'"
+                    class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
+                <h2 class="w3-wide ">SUBSCRIBE</h2>
+                <p>Join our mailing list to receive updates on the latest blog posts and other things..</p>
+                <p><input class="w3-input w3-border" type="email" placeholder="Enter e-mail"></p>
+                <button type="button" class="buton w3-padding-large  w3-margin-bottom"
+                    onclick="document.getElementById('subscribe').style.display='none'">Subscribe</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Pagination -->
+    <div class="w3-center w3-padding-32">
+        <div class="w3-bar">
+            <a href="#" class="w3-bar-item w3-button w3-hover-blue">«</a>
+            <a href="#" class="w3-bar-item w3-blue w3-button">1</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-blue">2</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-blue">3</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-blue">4</a>
+            <a href="#" class="w3-bar-item w3-button w3-hover-blue">»</a>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer class="page-footer blue accent-2">
+        <div class="row">
+            <div class="col l3">
+                <h5 class="white-text">Trading</h5>
+                <ul>
+                    <li>
+                        <a class="grey-text text-lighten-3" href="#!">Develop your Trading Algorithms</a>
+                    </li>
+                    <li>
+                        <a class="grey-text text-lighten-3" href="#!">Build Your Custom Algo
+                        </a>
+                    </li>
+                    <li>
+                        <a class="grey-text text-lighten-3" href="#!">Term & Conditions
+                        </a>
+                    </li>
+                    <li>
+                        <a class="grey-text text-lighten-3" href="#!">Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col l3 ">
+                <h5 class="white-text">Feature Services</h5>
+                <ul>
+                    <li>
+                        <a class="grey-text text-lighten-3" href="#!">AFL Services </a>
+                    </li>
+                    <li>
+                        <a class="grey-text text-lighten-3" href="#!">Meta Trader 4 Services
+                        </a>
+                    </li>
+                    <li>
+                        <a class="grey-text text-lighten-3" href="#!">TradingView Services
+                        </a>
+                    </li>
+                    <li>
+                        <a class="grey-text text-lighten-3" href="#!">Python Algo Development</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col l3 ">
+                <h5 class="white-text">Quick Link</h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
+                    <li>
+                        <a class="grey-text text-lighten-3" href="#!">Services </a>
+                    </li>
+                    <li>
+                        <a class="grey-text text-lighten-3" href="#!">About Us </a>
+                    </li>
+                    <li>
+                        <a class="grey-text text-lighten-3" href="#!">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col l3">
+                <h5 class="white-text">Contact us</h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="#!">+91 999-9999-999</a></li>
+                    <li>
+                        <a class="grey-text text-lighten-3" href="#!"> Info@trader.com </a>
+                    </li>
+                    <li>
+                        <a class="grey-text text-lighten-3" href="#!"> Aftact , link Road Pithoragarh</a>
+                    </li>
+                    <li>
+                        <a class="grey-text text-lighten-3" href="#!"> Uttarakhand, 262501</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2020 Fukset
+                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Script to open and close sidebar
+        $(document).ready(function () {
+            $(".sidenav").sidenav();
+            $(".fixed-action-btn").floatingActionButton();
+        });
+    </script>
+    <script>
+        // Toggle between hiding and showing blog replies/comments
+        document.getElementById("myBtn").click();
+        function myFunction(id) {
+            var x = document.getElementById(id);
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+
+        function likeFunction(x) {
+            x.style.fontWeight = "bold";
+            x.innerHTML = "✓ Liked";
+        }
+    </script>
+    <!-- Compiled and minified JavaScript -->
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/animation.js"></script>
+</body>
+
+</html>

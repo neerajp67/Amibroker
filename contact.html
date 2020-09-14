@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- responsive -->
+  <link rel="stylesheet" href="css/responsive.css" />
+  <!-- scroll down animation -->
+  <link rel="stylesheet" href="css/animation.css" />
+  <!-- scroll down -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- icons materialize -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  <!-- font family -->
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet" />
+  <!-- jquary -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>Contact us</title>
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="blue ligten-1">
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">Amibroker</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Algo Devlopment.html">Algo Development </a></li>
+        <li><a href="Python.html">Python Algo </a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="About.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Algo Devlopment.html">Algo Development </a></li>
+    <li><a href="Python.html">Python Algo </a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="About.html">About Us</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+
+  <!--Floting button hover  -->
+  <div class="fixed-action-btn">
+    <a class="btn-floating btn-large red">
+      <i class="large material-icons">mode_edit</i>
+    </a>
+    <ul>
+      <li><a class="btn-floating green"><i class="material-icons">call</i></a></li>
+      <li><a class="btn-floating red"><i class="material-icons">location_on</i></a></li>
+      <li><a class="btn-floating yellow darken-1"><i class="material-icons">code</i></a></li>
+      <li><a class="btn-floating green"><i class="material-icons">insert_chart</i></a></li>
+      <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+    </ul>
+  </div>
+
+  <!-- Contact us -->
+  <section id="contact col s12">
+    <h2 class="center-align blue-text col l6 s6 offset-l3 center ">Contact Us</h2>
+    <div class="row">
+      <div class="col s6 offset-s3">
+        <hr />
+      </div>
+    </div>
+
+    <div class="row">
+      <form class="col m6 l6 s10 offset-l3">
+        <div class="row">
+          <div class="input-field col l6 s12">
+            <i class="material-icons prefix">account_circle</i>
+            <input id="icon_prefix" type="text" class="validate" />
+            <label for="icon_prefix">First Name</label>
+          </div>
+          <div class="input-field col l6 s12">
+            <i class="material-icons prefix">account_circle</i>
+            <input id="icon_telephone" type="tel" class="validate" />
+            <label for="icon_telephone">last Name</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">mail</i>
+            <input id="email" type="email" class="validate" />
+            <label for="email">Email</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">phone</i>
+            <input id="phone" type="text" class="validate" data-length="10" />
+            <label for="phone">Mobile no</label>
+          </div>
+        </div>
+        <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s12">
+                <i class="material-icons prefix">mode_edit</i>
+                <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                <label for="icon_prefix2">leave a Message</label>
+              </div>
+            </div>
+            <a class="buton waves-effect" type="submit" name="action"
+              onclick="M.toast({html: 'Form has been subimitted'})">Submit
+            </a>
+          </form>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="page-footer blue accent-2">
+    <div class="row">
+      <div class="col l3">
+        <h5 class="white-text">Trading</h5>
+        <ul>
+          <li>
+            <a class="grey-text text-lighten-3" href="#!">Develop your Trading Algorithms</a>
+          </li>
+          <li>
+            <a class="grey-text text-lighten-3" href="#!">Build Your Custom Algo
+            </a>
+          </li>
+          <li>
+            <a class="grey-text text-lighten-3" href="#!">Term & Conditions
+            </a>
+          </li>
+          <li>
+            <a class="grey-text text-lighten-3" href="#!">Privacy Policy</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col l3 ">
+        <h5 class="white-text">Feature Services</h5>
+        <ul>
+          <li>
+            <a class="grey-text text-lighten-3" href="#!">AFL Services </a>
+          </li>
+          <li>
+            <a class="grey-text text-lighten-3" href="#!">Meta Trader 4 Services
+            </a>
+          </li>
+          <li>
+            <a class="grey-text text-lighten-3" href="#!">TradingView Services
+            </a>
+          </li>
+          <li>
+            <a class="grey-text text-lighten-3" href="#!">Python Algo Development</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col l3 ">
+        <h5 class="white-text">Quick Link</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
+          <li>
+            <a class="grey-text text-lighten-3" href="#!">Services </a>
+          </li>
+          <li>
+            <a class="grey-text text-lighten-3" href="#!">About Us </a>
+          </li>
+          <li>
+            <a class="grey-text text-lighten-3" href="#!">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col l3">
+        <h5 class="white-text">Contact us</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="#!">+91 999-9999-999</a></li>
+          <li>
+            <a class="grey-text text-lighten-3" href="#!"> Info@trader.com </a>
+          </li>
+          <li>
+            <a class="grey-text text-lighten-3" href="#!"> Aftact , link Road Pithoragarh</a>
+          </li>
+          <li>
+            <a class="grey-text text-lighten-3" href="#!"> Uttarakhand, 262501</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2020 Fukset
+        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    $(document).ready(function () {
+      $(".sidenav").sidenav();
+      $(".carousel.carousel-slider").carousel({
+        fullWidth: true,
+        indicators: true,
+        duration: 0.3,
+      });
+      $(".fixed-action-btn").floatingActionButton();
+      $(".materialboxed").materialbox();
+      $("input#phone").characterCounter();
+    });
+  </script>
+  <!-- Compiled and minified JavaScript -->
+  <script src=" https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>
